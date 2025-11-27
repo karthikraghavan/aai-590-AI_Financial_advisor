@@ -1,0 +1,95 @@
+{
+    "client_profile": {
+        "client_profile": [
+            {
+                "name": "Karthik Raghavan",
+                "monthly_income": 4651.821437,
+                "monthly_expense_total": 3880.05878,
+                "actual_savings": 701.99692,
+                "budget_goal": 343,
+                "investment_amount": 1099.751584,
+                "emergency_fund": 2342.386335,
+                "credit_score": 599.72993,
+                "loan_payment": 581,
+                "debt_to_income_ratio": 0.198166,
+                "savings_rate": 0.1509079678803673,
+                "subscription_services": 4,
+                "income_type": "Salary",
+                "rent_or_mortgage": 3233
+            }
+        ],
+        "cluster": {
+            "0": "Financial Achievers"
+        }
+    },
+    "financial_plan": {
+        "financial_planning_advice": {
+            "summary": "Karthik earns $4,652/month and spends $3,880, resulting in a surplus of $772. Savings rate is 15.1%, indicating a healthy savings habit but room for optimization.",
+            "budgeting_tips": [
+                "Reduce subscription services by $50/month to increase cash flow.",
+                "Consider negotiating rent to lower it from $3,233 to $3,000."
+            ],
+            "savings_strategy": "Increase automated savings by $100/month to reach a target of $800/month, enhancing the savings rate to 17.2%.",
+            "debt_management_plan": [
+                "Continue making the $581 monthly loan payment; consider refinancing if a lower rate is available.",
+                "Maintain credit utilization below 30% to improve credit score, focusing on paying down any high-interest debt."
+            ],
+            "investment_guidance": "Allocate $1,200/month into a diversified portfolio with a 70/30 equity-bond ratio, focusing on low-cost index funds (e.g., VOO, BND) after ensuring emergency fund is adequate.",
+            "emergency_fund_goal": "Target $11,640 (3\u00d7 monthly expenses) within 12 months by saving $1,000/month.",
+            "long_term_goals": [
+                "Aim to contribute 10% of income to a retirement account once emergency fund goal is met."
+            ],
+            "compliance_and_risk_notes": [
+                "Ensure all recommendations meet fiduciary standards.",
+                "Advice reflects Karthik's moderate risk exposure and focuses on wealth optimization."
+            ]
+        }
+    },
+    "allocation": {
+        "market_data": {
+            "S&P 500 YTD (%)": 14.07,
+            "AGG ETF YTD (%)": 6.43,
+            "VIX Current": 19.829999923706055
+        },
+        "portfolio_recommendation": {
+            "table": [
+                {
+                    "asset_class": "U.S. Equities (Large Cap)",
+                    "target_allocation": "50%",
+                    "example_instruments": [
+                        "SPY",
+                        "VOO"
+                    ]
+                },
+                {
+                    "asset_class": "U.S. Bonds (Intermediate-Maturity)",
+                    "target_allocation": "30%",
+                    "example_instruments": [
+                        "BND",
+                        "AGG"
+                    ]
+                },
+                {
+                    "asset_class": "International Equities",
+                    "target_allocation": "10%",
+                    "example_instruments": [
+                        "VXUS"
+                    ]
+                },
+                {
+                    "asset_class": "Cash & Money Market",
+                    "target_allocation": "10%",
+                    "example_instruments": [
+                        "Money Market Fund",
+                        "HYSA"
+                    ]
+                }
+            ],
+            "rationale": "This allocation leverages Karthik's strong income and savings discipline by focusing on growth through 50% in U.S. equities, which are performing well. The 30% in bonds provides stability and income, while 10% in international equities diversifies risk. The remaining 10% in cash ensures liquidity for any immediate needs.",
+            "compliance_notes": [
+                "Ensure suitability with risk profile",
+                "Maintain liquidity for near-term needs"
+            ]
+        }
+    }
+}

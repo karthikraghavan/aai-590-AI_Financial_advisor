@@ -1,0 +1,95 @@
+{
+    "client_profile": {
+        "client_profile": [
+            {
+                "name": "Karthik Raghavan",
+                "monthly_income": 696.058427,
+                "monthly_expense_total": 4685.15153,
+                "actual_savings": 3.514498,
+                "budget_goal": 343,
+                "investment_amount": 4.550866,
+                "emergency_fund": 110.827995,
+                "credit_score": 484.26614,
+                "loan_payment": 316,
+                "debt_to_income_ratio": 0.454423,
+                "savings_rate": 0.0050491422324235435,
+                "subscription_services": 4,
+                "income_type": "Salary",
+                "rent_or_mortgage": 3233
+            }
+        ],
+        "cluster": {
+            "2": "Financially Stressed"
+        }
+    },
+    "financial_plan": {
+        "financial_planning_advice": {
+            "summary": "Karthik earns $696/month but spends $4,685, resulting in a deficit of $3,989. Savings rate is 0.5%, indicating severe liquidity issues.",
+            "budgeting_tips": [
+                "Reduce discretionary spending by $300/month to help balance cash flow.",
+                "Consider negotiating rent from $3,233 to under $2,800 if possible."
+            ],
+            "savings_strategy": "Automate $150/month into a high-yield savings account to gradually increase savings rate towards 10%.",
+            "debt_management_plan": [
+                "Prioritize $316 monthly loan payment; explore refinancing options to lower interest rates.",
+                "Work on improving credit score by reducing credit utilization and making timely payments."
+            ],
+            "investment_guidance": "Focus on debt reduction first; once cash flow improves, consider low-cost ETFs with a conservative allocation.",
+            "emergency_fund_goal": "Target $14,055 (3\u00d7 monthly expenses) within 24 months to establish a sufficient safety net.",
+            "long_term_goals": [
+                "Aim to contribute 5% of income to a retirement account once positive cash flow is achieved."
+            ],
+            "compliance_and_risk_notes": [
+                "Ensure all recommendations meet fiduciary standards.",
+                "Advice reflects the client's high debt-to-income ratio and low credit score."
+            ]
+        }
+    },
+    "allocation": {
+        "market_data": {
+            "S&P 500 YTD (%)": 14.07,
+            "AGG ETF YTD (%)": 6.43,
+            "VIX Current": 19.829999923706055
+        },
+        "portfolio_recommendation": {
+            "table": [
+                {
+                    "asset_class": "Cash & Money Market",
+                    "target_allocation": "50%",
+                    "example_instruments": [
+                        "Money Market Fund",
+                        "HYSA"
+                    ]
+                },
+                {
+                    "asset_class": "U.S. Bonds (Short-Maturity)",
+                    "target_allocation": "30%",
+                    "example_instruments": [
+                        "SHY",
+                        "BND"
+                    ]
+                },
+                {
+                    "asset_class": "U.S. Equities (Large Cap)",
+                    "target_allocation": "10%",
+                    "example_instruments": [
+                        "SPY",
+                        "VOO"
+                    ]
+                },
+                {
+                    "asset_class": "Emergency Fund Savings",
+                    "target_allocation": "10%",
+                    "example_instruments": [
+                        "High-Interest Savings Account"
+                    ]
+                }
+            ],
+            "rationale": "This allocation prioritizes liquidity and safety, essential for a financially stressed profile. 50% in cash ensures immediate access to funds for expenses, while 30% in short-term bonds provides some yield with lower risk. A small allocation to equities allows for potential growth, and 10% is directed towards building an emergency fund.",
+            "compliance_notes": [
+                "Ensure suitability with risk profile",
+                "Focus on liquidity to manage immediate financial needs"
+            ]
+        }
+    }
+}

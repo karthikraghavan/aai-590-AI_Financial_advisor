@@ -15,3 +15,17 @@ langchain-chroma
 langchain-tavily==0.1.5
 langchain_aws
 langchain_google_genai
+fastapi
+uvicorn
+streamlit
+pandas
+numpy
+yfinance
+faiss-cpu
+pydantic
+ragas
+pypdf
+fastapi
+joblib
+scikit-learn
+openpyxl
