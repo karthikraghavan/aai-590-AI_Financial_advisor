@@ -6,13 +6,13 @@ from pydantic import BaseModel, Field
 
 from app.services import (
     BASE_DIR,
-    INPUT_USER_DATA,
     build_client_profile_from_excel,
     build_client_profile_from_payload,
     build_full_recommendation,
     generate_asset_allocation,
     generate_financial_plan,
     get_market_analysis,
+    BEST_K
 )
 
 app = FastAPI(
@@ -38,7 +38,7 @@ class InferencePayload(BaseModel):
     rent_or_mortgage: Optional[float] = 0.0
     name: Optional[str] = None
     model_name: Optional[str] = Field(
-        default="kmeans_k3.pkl",
+        default=f"kmeans_k{BEST_K}.pkl",
         description="Override model file name under results/. Defaults to kmeans_k9.pkl.",
     )
 
@@ -53,7 +53,7 @@ class AgenticRequest(BaseModel):
     payload: Optional[InferencePayload] = Field(default=None, description="Manual payload for profile creation.")
     market_data: Optional[Dict[str, Any]] = None
     use_live_market: bool = True
-    model_name: Optional[str] = "kmeans_k9.pkl"
+    model_name: Optional[str] = f"kmeans_k{BEST_K}.pkl"
 
     class Config:
         extra = "allow"
@@ -74,65 +74,25 @@ def health() -> Dict[str, str]:
 @app.post("/infer")
 def infer_cluster(payload: InferencePayload) -> Dict[str, Any]:
     try:
-        #profile = build_client_profile_from_payload(
-         #   payload.dict(exclude={"model_name"}, exclude_none=True),
-          #  model_name=payload.model_name,
-        #)
-        profile = build_client_profile_from_excel(
-            INPUT_USER_DATA / "input.xlsx",
+        profile = build_client_profile_from_payload(
+            payload.dict(exclude={"model_name"}, exclude_none=True),
             model_name=payload.model_name,
-        )  # For consistent feature engineering
+        )
+    
         cluster = profile.get("cluster", {})
         persona = next(iter(cluster.values()), "Unknown")
         return {"cluster": cluster, "persona": persona, "client_profile": profile.get("client_profile")}
     except Exception as exc:  # noqa: BLE001
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
-
-@app.post("/agentic/run")
-def agentic_rag(request: AgenticRequest) -> Dict[str, Any]:
-    try:
-        if request.payload:
-            profile = build_client_profile_from_payload(
-                request.payload.dict(exclude_none=True, exclude={"model_name"}),
-                model_name=request.model_name,
-            )
-        elif request.file_path:
-            path = _resolve_path(request.file_path)
-            profile = build_client_profile_from_excel(path, model_name=request.model_name)
-        else:
-            raise HTTPException(status_code=400, detail="Provide either payload or file_path.")
-
-        market = request.market_data or get_market_analysis(use_live=request.use_live_market)
-        plan = generate_financial_plan(market, profile)
-        allocation = generate_asset_allocation(market, profile)
-
-        return {
-            "client_profile": profile,
-            "market": market,
-            "financial_plan": plan,
-            "allocation": allocation,
-        }
-    except HTTPException:
-        raise
-    except Exception as exc:  # noqa: BLE001
-        raise HTTPException(status_code=500, detail=str(exc)) from exc
-
-
-@app.post("/agentic/full-run")
+    
+@app.post("/agentic/finadvice")
 def full_agentic_recommendation(request: AgenticRequest) -> Dict[str, Any]:
     try:
-        if request.payload:
-            profile = build_client_profile_from_payload(
+        profile = build_client_profile_from_payload(
                 request.payload.dict(exclude_none=True, exclude={"model_name"}),
                 model_name=request.model_name,
-            )
-        elif request.file_path:
-            path = _resolve_path(request.file_path)
-            profile = build_client_profile_from_excel(path, model_name=request.model_name)
-        else:
-            raise HTTPException(status_code=400, detail="Provide either payload or file_path.")
-
+        ) 
         return build_full_recommendation(
             client_profile=profile,
             market_data=request.market_data,

@@ -18,6 +18,7 @@ langchain_google_genai
 fastapi
 uvicorn
 streamlit
+requests
 pandas
 numpy
 yfinance
@@ -29,3 +30,4 @@ fastapi
 joblib
 scikit-learn
 openpyxl
+matplotlib

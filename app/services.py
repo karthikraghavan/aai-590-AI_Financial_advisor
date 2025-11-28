@@ -6,6 +6,7 @@ import os
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
+from dotenv import load_dotenv
 
 import joblib
 import numpy as np
@@ -24,7 +25,6 @@ MODEL_DIR = BASE_DIR / "results"
 VECTOR_STORE_DIR = BASE_DIR / "faiss_vector_store"
 PROMPTS_DIR = DATA_DIR / "prompts"
 DOCS_DIR = DATA_DIR / "docs"
-INPUT_USER_DATA = DATA_DIR / "userdata"
 
 logger = logging.getLogger(__name__)
 if not logger.handlers:
@@ -55,13 +55,12 @@ BEST_K = 3
 class ProfileError(Exception):
     """Raised when profile processing fails."""
 
-
-def get_openai_key() -> Optional[str]:
-    api_key = os.getenv("OPEN_AI_KEY") or os.getenv("OPENAI_API_KEY")
+def get_openai_key():
+    api_key = os.getenv("OPEN_AI_KEY")
     if api_key:
+        api_key = api_key.strip()
         return api_key.strip()
     return None
-
 
 def _load_scaler() -> joblib:
     scaler_path = BASE_DIR / "robust_scaler.pkl"
@@ -159,9 +158,9 @@ def build_client_profile_from_excel(path: Path, model_name: Optional[str] = None
 def build_client_profile_from_payload(payload: Dict[str, Any], model_name: Optional[str] = None) -> Dict[str, Any]:
     processed_data = _prepare_dataframe_from_payload(payload)
     cluster_label = _infer_cluster_label(processed_data, model_name=model_name)
-    profile = [payload]
+    clean_profile = processed_data.iloc[0].to_dict()
+    profile = [clean_profile]
     return {"client_profile": profile, "cluster": {cluster_label: SEGMENT_LABELS.get(cluster_label, "Unknown")}}
-
 
 def get_ytd_return(ticker: str) -> Optional[float]:
     year_start = datetime(datetime.today().year, 1, 1)
@@ -272,13 +271,17 @@ def generate_prompt_response(market_json: Any, client_profile: Any, tag: str) ->
     cluster_dict = profile_obj.get("cluster") or {}
     prompt_segment = list(cluster_dict.values())[0] if cluster_dict else "Unknown"
 
+    # Load .env 
+    env_path = os.path.join(os.path.dirname(__file__), "..", ".env")
+    load_dotenv(env_path)
     api_key = get_openai_key()
+
     if not api_key:
         raise ValueError("OPEN_AI_KEY or OPENAI_API_KEY is not set.")
 
     embeddings = OpenAIEmbeddings(model="text-embedding-3-small", openai_api_key=api_key)
     vector_store = _load_vector_store(tag, embeddings)
-    retriever = vector_store.as_retriever(search_kwargs={"k": 15})
+    retriever = vector_store.as_retriever(search_kwargs={"k": 50})
 
     docs = retriever.invoke("portfolio recommendation" if tag == "AA" else "financial planning")
     context = "\n\n".join([d.page_content for d in docs])
@@ -318,9 +321,38 @@ def generate_asset_allocation(market_json: Any, client_profile: Any) -> Dict[str
 
 
 def build_full_recommendation(
-    client_profile: Dict[str, Any], market_data: Optional[Dict[str, Any]] = None, use_live_market: bool = True
+    client_profile: Dict[str, Any],
+    market_data: Optional[Dict[str, Any]] = None,
+    use_live_market: bool = True,
+    output_path: Optional[Path] = None,
 ) -> Dict[str, Any]:
     market = market_data or get_market_analysis(use_live=use_live_market)
     financial_plan = generate_financial_plan(market, client_profile)
     allocation = generate_asset_allocation(market, client_profile)
-    return {"client_profile": client_profile, "market": market, "financial_plan": financial_plan, "allocation": allocation}
+
+    result = {
+        "client_profile": client_profile,
+        "market": market,
+        "financial_plan": financial_plan,
+        "allocation": allocation,
+    }
+
+    print(f'result: {result}')
+
+    # Persist combined output to disk for downstream use
+    target = output_path
+    if target is None:
+        # Try to use the detected segment in the file name; fall back to generic name
+        segment = next(iter(client_profile.get("cluster", {}).values()), "combined")
+        print(f'segment: {segment}')
+        target = DATA_DIR / "report" / f"output_{segment}.json"
+
+    target = Path(target)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    with target.open("w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2)
+
+    logger.info("Saved combined recommendation to %s", target)
+    result["saved_to"] = str(target)
+
+    return result

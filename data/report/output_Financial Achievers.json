@@ -1,95 +1,111 @@
 {
-    "client_profile": {
-        "client_profile": [
-            {
-                "name": "Karthik Raghavan",
-                "monthly_income": 4651.821437,
-                "monthly_expense_total": 3880.05878,
-                "actual_savings": 701.99692,
-                "budget_goal": 343,
-                "investment_amount": 1099.751584,
-                "emergency_fund": 2342.386335,
-                "credit_score": 599.72993,
-                "loan_payment": 581,
-                "debt_to_income_ratio": 0.198166,
-                "savings_rate": 0.1509079678803673,
-                "subscription_services": 4,
-                "income_type": "Salary",
-                "rent_or_mortgage": 3233
-            }
-        ],
-        "cluster": {
-            "0": "Financial Achievers"
-        }
-    },
-    "financial_plan": {
-        "financial_planning_advice": {
-            "summary": "Karthik earns $4,652/month and spends $3,880, resulting in a surplus of $772. Savings rate is 15.1%, indicating a healthy savings habit but room for optimization.",
-            "budgeting_tips": [
-                "Reduce subscription services by $50/month to increase cash flow.",
-                "Consider negotiating rent to lower it from $3,233 to $3,000."
-            ],
-            "savings_strategy": "Increase automated savings by $100/month to reach a target of $800/month, enhancing the savings rate to 17.2%.",
-            "debt_management_plan": [
-                "Continue making the $581 monthly loan payment; consider refinancing if a lower rate is available.",
-                "Maintain credit utilization below 30% to improve credit score, focusing on paying down any high-interest debt."
-            ],
-            "investment_guidance": "Allocate $1,200/month into a diversified portfolio with a 70/30 equity-bond ratio, focusing on low-cost index funds (e.g., VOO, BND) after ensuring emergency fund is adequate.",
-            "emergency_fund_goal": "Target $11,640 (3\u00d7 monthly expenses) within 12 months by saving $1,000/month.",
-            "long_term_goals": [
-                "Aim to contribute 10% of income to a retirement account once emergency fund goal is met."
-            ],
-            "compliance_and_risk_notes": [
-                "Ensure all recommendations meet fiduciary standards.",
-                "Advice reflects Karthik's moderate risk exposure and focuses on wealth optimization."
-            ]
-        }
-    },
-    "allocation": {
-        "market_data": {
-            "S&P 500 YTD (%)": 14.07,
-            "AGG ETF YTD (%)": 6.43,
-            "VIX Current": 19.829999923706055
-        },
-        "portfolio_recommendation": {
-            "table": [
-                {
-                    "asset_class": "U.S. Equities (Large Cap)",
-                    "target_allocation": "50%",
-                    "example_instruments": [
-                        "SPY",
-                        "VOO"
-                    ]
-                },
-                {
-                    "asset_class": "U.S. Bonds (Intermediate-Maturity)",
-                    "target_allocation": "30%",
-                    "example_instruments": [
-                        "BND",
-                        "AGG"
-                    ]
-                },
-                {
-                    "asset_class": "International Equities",
-                    "target_allocation": "10%",
-                    "example_instruments": [
-                        "VXUS"
-                    ]
-                },
-                {
-                    "asset_class": "Cash & Money Market",
-                    "target_allocation": "10%",
-                    "example_instruments": [
-                        "Money Market Fund",
-                        "HYSA"
-                    ]
-                }
-            ],
-            "rationale": "This allocation leverages Karthik's strong income and savings discipline by focusing on growth through 50% in U.S. equities, which are performing well. The 30% in bonds provides stability and income, while 10% in international equities diversifies risk. The remaining 10% in cash ensures liquidity for any immediate needs.",
-            "compliance_notes": [
-                "Ensure suitability with risk profile",
-                "Maintain liquidity for near-term needs"
-            ]
-        }
+  "client_profile": {
+    "client_profile": [
+      {
+        "monthly_income": 4651.821437,
+        "monthly_expense_total": 3880.05878,
+        "actual_savings": 771.76,
+        "debt_to_income_ratio": 0.5015,
+        "investment_amount": 1099.751584,
+        "emergency_fund": 2342.386335,
+        "credit_score": 766.0
+      }
+    ],
+    "cluster": {
+      "0": "Financial Achievers"
     }
+  },
+  "market": {
+    "S&P 500 YTD (%)": 15.4,
+    "AGG ETF YTD (%)": 7.45,
+    "VIX Current": 17.209999084472656
+  },
+  "financial_plan": {
+    "raw": "{\n  \"Financial Segment\": \"Financial Achievers\",\n  \"Client profile\": {\n    \"monthly_income\": 4651.821437,\n    \"monthly_expense_total\": 3880.05878,\n    \"actual_savings\": 771.76,\n    \"debt_to_income_ratio\": 0.5015,\n    \"investment_amount\": 1099.751584,\n    \"emergency_fund\": 2342.386335,\n    \"credit_score\": 766.0\n  },\n  \"Financial Advise\": {\n    \"recommendations\": [\n      {\n        \"action\": \"Increase monthly savings to meet lake cabin goal\",\n        \"amount\": 1666.67,\n        \"justification\": \"To save $150,000 for the lake cabin in 6 years, the Millers need to save approximately $2,083.33 monthly. With current savings of $771.76, they need to increase their savings by $1,311.57 monthly.\"\n      },\n      {\n        \"action\": \"Refinance existing mortgage\",\n        \"justification\": \"Refinancing could lower monthly payments, increasing cash flow. Assuming a reduction of 1% in interest rate on a $240,000 mortgage, the Millers could save approximately $200 monthly.\"\n      },\n      {\n        \"action\": \"Open a 529 savings plan for Emily's college\",\n        \"initial_contribution\": 10000,\n        \"annual_contribution\": 15000,\n        \"justification\": \"To cover 4 years of elite university costs estimated at $284,000, starting with $10,000 and contributing $15,000 annually will help accumulate necessary funds over 17 years.\"\n      },\n      {\n        \"action\": \"Increase life insurance coverage\",\n        \"justification\": \"To protect against loss of income, Joe recommends increasing life insurance to cover 10 times their annual income, approximately $2,300,000 combined.\"\n      },\n      {\n        \"action\": \"Acquire long-term disability insurance for Dan\",\n        \"justification\": \"To secure income replacement, Dan should obtain a policy that covers at least 60% of his income, approximately $6,600 monthly.\"\n      },\n      {\n        \"action\": \"Enhance emergency fund yields\",\n        \"justification\": \"Move emergency funds of $2,342.39 to a higher-yield account to increase returns, potentially earning an additional $100 annually.\"\n      }\n    ]\n  }\n}",
+    "parsed": {
+      "Financial Segment": "Financial Achievers",
+      "Client profile": {
+        "monthly_income": 4651.821437,
+        "monthly_expense_total": 3880.05878,
+        "actual_savings": 771.76,
+        "debt_to_income_ratio": 0.5015,
+        "investment_amount": 1099.751584,
+        "emergency_fund": 2342.386335,
+        "credit_score": 766.0
+      },
+      "Financial Advise": {
+        "recommendations": [
+          {
+            "action": "Increase monthly savings to meet lake cabin goal",
+            "amount": 1666.67,
+            "justification": "To save $150,000 for the lake cabin in 6 years, the Millers need to save approximately $2,083.33 monthly. With current savings of $771.76, they need to increase their savings by $1,311.57 monthly."
+          },
+          {
+            "action": "Refinance existing mortgage",
+            "justification": "Refinancing could lower monthly payments, increasing cash flow. Assuming a reduction of 1% in interest rate on a $240,000 mortgage, the Millers could save approximately $200 monthly."
+          },
+          {
+            "action": "Open a 529 savings plan for Emily's college",
+            "initial_contribution": 10000,
+            "annual_contribution": 15000,
+            "justification": "To cover 4 years of elite university costs estimated at $284,000, starting with $10,000 and contributing $15,000 annually will help accumulate necessary funds over 17 years."
+          },
+          {
+            "action": "Increase life insurance coverage",
+            "justification": "To protect against loss of income, Joe recommends increasing life insurance to cover 10 times their annual income, approximately $2,300,000 combined."
+          },
+          {
+            "action": "Acquire long-term disability insurance for Dan",
+            "justification": "To secure income replacement, Dan should obtain a policy that covers at least 60% of his income, approximately $6,600 monthly."
+          },
+          {
+            "action": "Enhance emergency fund yields",
+            "justification": "Move emergency funds of $2,342.39 to a higher-yield account to increase returns, potentially earning an additional $100 annually."
+          }
+        ]
+      }
+    }
+  },
+  "allocation": {
+    "raw": "{\n  \"market_data\": {\n    \"S&P 500 YTD (%)\": 15.4,\n    \"AGG ETF YTD (%)\": 7.45,\n    \"VIX Current\": 17.21\n  },\n  \"portfolio_recommendation\": [\n    {\n      \"asset_class\": \"Equities\",\n      \"target_allocation_percentage\": 60,\n      \"example_instruments\": [\"S&P 500 Index Fund\", \"Total Stock Market ETF\"]\n    },\n    {\n      \"asset_class\": \"Bonds\",\n      \"target_allocation_percentage\": 30,\n      \"example_instruments\": [\"AGG ETF\", \"Intermediate-Term Bond Fund\"]\n    },\n    {\n      \"asset_class\": \"Cash/Cash Equivalents\",\n      \"target_allocation_percentage\": 10,\n      \"example_instruments\": [\"High-Yield Savings Account\", \"Money Market Fund\"]\n    }\n  ],\n  \"rationale\": {\n    \"Equities\": \"With a strong YTD performance of 15.4% in the S&P 500, equities are positioned for growth. Given the client's financial achiever status and ability to take on some risk, a 60% allocation allows for capital appreciation while still being mindful of volatility.\",\n    \"Bonds\": \"The AGG ETF has shown a solid return of 7.45% YTD, making bonds a suitable choice for stability and income. A 30% allocation balances the portfolio, providing a buffer against equity market fluctuations.\",\n    \"Cash/Cash Equivalents\": \"Maintaining a 10% allocation in cash or cash equivalents ensures liquidity for any short-term needs or emergencies, which is important given the client's current emergency fund status.\"\n  },\n  \"compliance_notes\": \"The recommended allocations align with the client's financial achiever profile, allowing for growth while managing risk. The portfolio is diversified across asset classes, which is crucial for long-term investment success. The liquidity needs are met with a cash allocation, ensuring the client can cover expenses without needing to liquidate investments during market downturns.\"\n}",
+    "parsed": {
+      "market_data": {
+        "S&P 500 YTD (%)": 15.4,
+        "AGG ETF YTD (%)": 7.45,
+        "VIX Current": 17.21
+      },
+      "portfolio_recommendation": [
+        {
+          "asset_class": "Equities",
+          "target_allocation_percentage": 60,
+          "example_instruments": [
+            "S&P 500 Index Fund",
+            "Total Stock Market ETF"
+          ]
+        },
+        {
+          "asset_class": "Bonds",
+          "target_allocation_percentage": 30,
+          "example_instruments": [
+            "AGG ETF",
+            "Intermediate-Term Bond Fund"
+          ]
+        },
+        {
+          "asset_class": "Cash/Cash Equivalents",
+          "target_allocation_percentage": 10,
+          "example_instruments": [
+            "High-Yield Savings Account",
+            "Money Market Fund"
+          ]
+        }
+      ],
+      "rationale": {
+        "Equities": "With a strong YTD performance of 15.4% in the S&P 500, equities are positioned for growth. Given the client's financial achiever status and ability to take on some risk, a 60% allocation allows for capital appreciation while still being mindful of volatility.",
+        "Bonds": "The AGG ETF has shown a solid return of 7.45% YTD, making bonds a suitable choice for stability and income. A 30% allocation balances the portfolio, providing a buffer against equity market fluctuations.",
+        "Cash/Cash Equivalents": "Maintaining a 10% allocation in cash or cash equivalents ensures liquidity for any short-term needs or emergencies, which is important given the client's current emergency fund status."
+      },
+      "compliance_notes": "The recommended allocations align with the client's financial achiever profile, allowing for growth while managing risk. The portfolio is diversified across asset classes, which is crucial for long-term investment success. The liquidity needs are met with a cash allocation, ensuring the client can cover expenses without needing to liquidate investments during market downturns."
+    }
+  }
 }

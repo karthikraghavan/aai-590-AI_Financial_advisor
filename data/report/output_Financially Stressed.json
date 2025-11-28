@@ -1,95 +1,99 @@
 {
-    "client_profile": {
+  "client_profile": {
+    "client_profile": [
+      {
+        "monthly_income": 0.0,
+        "monthly_expense_total": 0.0,
+        "actual_savings": 0.0,
+        "debt_to_income_ratio": 0.0,
+        "investment_amount": 0.0,
+        "emergency_fund": 0.0,
+        "credit_score": 0.0
+      }
+    ],
+    "cluster": {
+      "2": "Financially Stressed"
+    }
+  },
+  "market": {
+    "S&P 500 YTD (%)": 15.4,
+    "AGG ETF YTD (%)": 7.45,
+    "VIX Current": 17.209999084472656
+  },
+  "financial_plan": {
+    "raw": "{\n  \"Financial Segment\": \"Financially Stressed\",\n  \"Client profile\": {\n    \"client_profile\": [\n      {\n        \"monthly_income\": 0.0,\n        \"monthly_expense_total\": 0.0,\n        \"actual_savings\": 0.0,\n        \"debt_to_income_ratio\": 0.0,\n        \"investment_amount\": 0.0,\n        \"emergency_fund\": 0.0,\n        \"credit_score\": 0.0\n      }\n    ],\n    \"cluster\": {\n      \"2\": \"Financially Stressed\"\n    }\n  },\n  \"Financial Advise\": {\n    \"recommendations\": [\n      {\n        \"action\": \"Establish an emergency fund\",\n        \"amount\": 30000,\n        \"justification\": \"To cover at least 3-6 months of expenses, which is essential for financial stability.\"\n      },\n      {\n        \"action\": \"Increase savings contributions\",\n        \"amount\": 1666.67,\n        \"justification\": \"To accumulate $20,000 annually towards the lake cabin goal, which is crucial for achieving long-term aspirations.\"\n      },\n      {\n        \"action\": \"Refinance existing mortgage\",\n        \"justification\": \"To lower monthly payments and increase cash flow, which can help in managing expenses better.\"\n      },\n      {\n        \"action\": \"Obtain long-term disability insurance for Dan\",\n        \"justification\": \"To protect against loss of income, ensuring financial stability in case of unforeseen circumstances.\"\n      },\n      {\n        \"action\": \"Create a budget\",\n        \"justification\": \"To track monthly expenses and identify areas for cost reduction, which is vital for improving financial health.\"\n      },\n      {\n        \"action\": \"Consult with a financial advisor\",\n        \"justification\": \"To receive personalized guidance and strategies tailored to improve financial circumstances.\"\n      }\n    ]\n  }\n}",
+    "parsed": {
+      "Financial Segment": "Financially Stressed",
+      "Client profile": {
         "client_profile": [
-            {
-                "name": "Karthik Raghavan",
-                "monthly_income": 696.058427,
-                "monthly_expense_total": 4685.15153,
-                "actual_savings": 3.514498,
-                "budget_goal": 343,
-                "investment_amount": 4.550866,
-                "emergency_fund": 110.827995,
-                "credit_score": 484.26614,
-                "loan_payment": 316,
-                "debt_to_income_ratio": 0.454423,
-                "savings_rate": 0.0050491422324235435,
-                "subscription_services": 4,
-                "income_type": "Salary",
-                "rent_or_mortgage": 3233
-            }
+          {
+            "monthly_income": 0.0,
+            "monthly_expense_total": 0.0,
+            "actual_savings": 0.0,
+            "debt_to_income_ratio": 0.0,
+            "investment_amount": 0.0,
+            "emergency_fund": 0.0,
+            "credit_score": 0.0
+          }
         ],
         "cluster": {
-            "2": "Financially Stressed"
+          "2": "Financially Stressed"
         }
-    },
-    "financial_plan": {
-        "financial_planning_advice": {
-            "summary": "Karthik earns $696/month but spends $4,685, resulting in a deficit of $3,989. Savings rate is 0.5%, indicating severe liquidity issues.",
-            "budgeting_tips": [
-                "Reduce discretionary spending by $300/month to help balance cash flow.",
-                "Consider negotiating rent from $3,233 to under $2,800 if possible."
-            ],
-            "savings_strategy": "Automate $150/month into a high-yield savings account to gradually increase savings rate towards 10%.",
-            "debt_management_plan": [
-                "Prioritize $316 monthly loan payment; explore refinancing options to lower interest rates.",
-                "Work on improving credit score by reducing credit utilization and making timely payments."
-            ],
-            "investment_guidance": "Focus on debt reduction first; once cash flow improves, consider low-cost ETFs with a conservative allocation.",
-            "emergency_fund_goal": "Target $14,055 (3\u00d7 monthly expenses) within 24 months to establish a sufficient safety net.",
-            "long_term_goals": [
-                "Aim to contribute 5% of income to a retirement account once positive cash flow is achieved."
-            ],
-            "compliance_and_risk_notes": [
-                "Ensure all recommendations meet fiduciary standards.",
-                "Advice reflects the client's high debt-to-income ratio and low credit score."
-            ]
-        }
-    },
-    "allocation": {
-        "market_data": {
-            "S&P 500 YTD (%)": 14.07,
-            "AGG ETF YTD (%)": 6.43,
-            "VIX Current": 19.829999923706055
-        },
-        "portfolio_recommendation": {
-            "table": [
-                {
-                    "asset_class": "Cash & Money Market",
-                    "target_allocation": "50%",
-                    "example_instruments": [
-                        "Money Market Fund",
-                        "HYSA"
-                    ]
-                },
-                {
-                    "asset_class": "U.S. Bonds (Short-Maturity)",
-                    "target_allocation": "30%",
-                    "example_instruments": [
-                        "SHY",
-                        "BND"
-                    ]
-                },
-                {
-                    "asset_class": "U.S. Equities (Large Cap)",
-                    "target_allocation": "10%",
-                    "example_instruments": [
-                        "SPY",
-                        "VOO"
-                    ]
-                },
-                {
-                    "asset_class": "Emergency Fund Savings",
-                    "target_allocation": "10%",
-                    "example_instruments": [
-                        "High-Interest Savings Account"
-                    ]
-                }
-            ],
-            "rationale": "This allocation prioritizes liquidity and safety, essential for a financially stressed profile. 50% in cash ensures immediate access to funds for expenses, while 30% in short-term bonds provides some yield with lower risk. A small allocation to equities allows for potential growth, and 10% is directed towards building an emergency fund.",
-            "compliance_notes": [
-                "Ensure suitability with risk profile",
-                "Focus on liquidity to manage immediate financial needs"
-            ]
-        }
+      },
+      "Financial Advise": {
+        "recommendations": [
+          {
+            "action": "Establish an emergency fund",
+            "amount": 30000,
+            "justification": "To cover at least 3-6 months of expenses, which is essential for financial stability."
+          },
+          {
+            "action": "Increase savings contributions",
+            "amount": 1666.67,
+            "justification": "To accumulate $20,000 annually towards the lake cabin goal, which is crucial for achieving long-term aspirations."
+          },
+          {
+            "action": "Refinance existing mortgage",
+            "justification": "To lower monthly payments and increase cash flow, which can help in managing expenses better."
+          },
+          {
+            "action": "Obtain long-term disability insurance for Dan",
+            "justification": "To protect against loss of income, ensuring financial stability in case of unforeseen circumstances."
+          },
+          {
+            "action": "Create a budget",
+            "justification": "To track monthly expenses and identify areas for cost reduction, which is vital for improving financial health."
+          },
+          {
+            "action": "Consult with a financial advisor",
+            "justification": "To receive personalized guidance and strategies tailored to improve financial circumstances."
+          }
+        ]
+      }
     }
+  },
+  "allocation": {
+    "raw": "{\n  \"market_data\": {\n    \"S&P 500 YTD (%)\": 15.4,\n    \"AGG ETF YTD (%)\": 7.45,\n    \"VIX Current\": 17.21\n  },\n  \"portfolio_recommendation\": [\n    {\n      \"asset_class\": \"Emergency Fund\",\n      \"target_allocation_percentage\": 100,\n      \"example_instruments\": \"High-yield savings account, Money market funds\"\n    }\n  ],\n  \"rationale\": {\n    \"Emergency Fund\": \"Given the client's financially stressed situation, the primary focus should be on building an emergency fund. This allocation ensures liquidity and provides a safety net for unexpected expenses. With no current income or savings, having immediate access to funds is crucial.\"\n  },\n  \"compliance_notes\": {\n    \"risk_profile\": \"The recommendation aligns with the client's risk profile as it prioritizes safety and liquidity over growth, which is essential given their current financial stress.\",\n    \"liquidity_needs\": \"The entire allocation is directed towards liquid assets to meet any immediate financial needs, ensuring the client can access funds without penalty.\"\n  }\n}",
+    "parsed": {
+      "market_data": {
+        "S&P 500 YTD (%)": 15.4,
+        "AGG ETF YTD (%)": 7.45,
+        "VIX Current": 17.21
+      },
+      "portfolio_recommendation": [
+        {
+          "asset_class": "Emergency Fund",
+          "target_allocation_percentage": 100,
+          "example_instruments": "High-yield savings account, Money market funds"
+        }
+      ],
+      "rationale": {
+        "Emergency Fund": "Given the client's financially stressed situation, the primary focus should be on building an emergency fund. This allocation ensures liquidity and provides a safety net for unexpected expenses. With no current income or savings, having immediate access to funds is crucial."
+      },
+      "compliance_notes": {
+        "risk_profile": "The recommendation aligns with the client's risk profile as it prioritizes safety and liquidity over growth, which is essential given their current financial stress.",
+        "liquidity_needs": "The entire allocation is directed towards liquid assets to meet any immediate financial needs, ensuring the client can access funds without penalty."
+      }
+    }
+  }
 }
