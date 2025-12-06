@@ -31,3 +31,7 @@ joblib
 scikit-learn
 openpyxl
 matplotlib
+torch
+transformers
+datasets
+accelerate
