@@ -1,0 +1,42 @@
+
+
+## Solution 1:
+
+### Portfolio Recommendation Table
+
+| Asset Class | Target Allocation % | Example Instruments |
+|-------------|---------------------|---------------------|
+| Stocks      | 60                  | SPY, VOO            |
+| Bonds       | 30                  | AGG, LQD             |
+| Cash        | 10                  | Vanguard Short-Term Bond Fund |
+
+### Rationale
+
+The recommended allocation for Karthik Raghavan, a Financial Achiever, is designed to balance growth with stability. Given his moderate income and expenses, the 60% allocation to stocks (SPY, VOO) aims to capitalize on the current bullish market trend indicated by the S&P 500's 16.38% YTD return. This allocation is aggressive but still within a reasonable range for someone with a moderate risk tolerance and a solid credit score of 599.72993.
+
+The 30% allocation to bonds (AGG, LQD) provides a buffer against market volatility and aligns with the AGG ETF's 6.81% YTD return, which is lower but more stable than the stock market's performance. This conservative allocation also helps to manage the client's debt-to-income ratio, which is currently at 0.198166.
+
+Finally, the 10% allocation to cash (Vanguard Short-Term Bond Fund) offers liquidity and a safety net for emergencies or unexpected expenses. This aligns with Karthik's goal of maintaining an emergency fund, which currently stands at 2342.386335.
+
+### Compliance & Suitability Notes
+
+This mix of assets is suitable for Karthik's financial profile as a Financial Achiever. The allocation is designed to support his goal of saving for college and retirement, with a focus on growth (stocks) while mitigating risk (bonds and cash). The allocation respects his liquidity needs, with a portion in cash for emergencies, and aligns with his moderate risk tolerance. The diversification across different asset classes and the inclusion of both growth and income-generating instruments should help Karthik achieve his financial goals while managing risk.
+
+## Instruction 2 (More Difficult):
+
+**Topic: Financial Planning**
+
+As a financial planner, you are tasked with creating a comprehensive financial plan for a client named Emma Thompson. Emma is a Financial Steady individual with a stable income, low expenses, and a strong commitment to financial security. She has a high credit score of 800 and a low debt-to-income ratio of 0.05. Emma's primary financial goals include saving for her child's education, building a retirement nest egg, and maintaining an emergency fund. She is also interested in exploring investment opportunities that align with her ethical values, such as ESG (Environmental, Social, and Governance) investments.
+
+Client Profile:
+{'client_profile': [{'name': 'Emma Thompson','monthly_income': 7500.00,'monthly_expense_total': 2500.00, 'actual_savings': 15000.00, 'budget_goal': 500, 'investment_amount': 2000.00, 'emergency_fund': 6000.00, 'credit_score': 800, 'loan_payment': 300, 'debt_to_income_ratio': 0.05,'savings_rate': 0.20,'subscription_services': 2, 'income_type': 'Salary','rent_or_mortgage': 3000}], 'cluster': {'0': 'Financial Steady'}}
+
+Market Data:
+{
+  "ESG Fund YTD (%)": 10.25,
+  "S&P 500 YTD (%)": 14.50,
+  "VIX Current": 12.80
+}
+
+Additional Constraints:
+1. Include at least two ESG-f

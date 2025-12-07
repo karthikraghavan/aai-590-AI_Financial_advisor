@@ -1,0 +1,45 @@
+segment,category,ground_truth
+Financially Stressed,financial_planning," Track monthly income.
+ Track monthly expenses.
+ Apply the 50/30/20 budget rule.
+ Prioritize essential needs.
+ Build a $500 starter emergency fund.
+ Grow emergency fund to $1000.
+ Expand emergency fund to one month of expenses.
+ Pay down high-interest debt.
+ Consider debt consolidation.
+ Build/improve credit.
+ Begin basic tax planning.
+ Use low-cost insurance."
+Financially Stressed,asset_allocation," Prioritize capital preservation.
+ Hold mostly cash or cash equivalents.
+ Avoid high-volatility assets.
+ Use conservative bond-heavy mix.
+ Maintain minimal stock exposure.
+ Keep allocation stable until emergency fund and debt improve."
+Steady Planners,financial_planning," Maintain a 50/30/20 budget.
+ Build a 3–6 month emergency fund.
+ Continue structured debt repayment.
+ Increase retirement contributions.
+ Review tax strategy annually.
+ Use insurance for risk reduction.
+ Plan medium-term goals (home, education)."
+Steady Planners,asset_allocation," Use a moderate mix of stocks, bonds, and cash.
+ Diversify within each asset class.
+ Diversify across domestic & international markets.
+ Rebalance periodically.
+ Match allocation to goals & time horizon.
+ Use target-date funds or rule-of-100 guidance."
+Financial Achievers,financial_planning," Maximize long-term retirement contributions.
+ Use tax-advantaged accounts (401k, 403b, IRA).
+ Maintain a 6–12 month emergency fund.
+ Optimize taxes proactively.
+ Use deductions & credits.
+ Begin estate planning (will, trust, POA).
+ Set long-term goals (education, early retirement)."
+Financial Achievers,asset_allocation," Use aggressive equity-heavy allocation.
+ Maintain high proportion of growth assets.
+ Diversify globally.
+ Accept volatility for long-term returns.
+ Shift toward safer assets as goals approach.
+ Align allocation with age, goals, and risk tolerance."

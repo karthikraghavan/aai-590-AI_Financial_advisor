@@ -1,0 +1,35 @@
+
+
+Step 1: Understand the client's financial situation
+
+Karthik Raghavan is a Steady Planner with a monthly income of $3,006.42. His monthly expenses total $1,463.18, resulting in actual savings of $4,213.16. He has a budget goal of $343, an investment amount of $643.36, and an emergency fund of $993.18. His credit score is 425.515152, and he has a loan payment of $581. His debt-to-income ratio is 0.843264, and his savings rate is 1.4013890294811315. He has 4 subscription services and his income type is Salary. His rent or mortgage is $3,233.
+
+Step 2: Analyze the client's financial situation
+
+Karthik's financial situation shows that he has a healthy savings rate and a low debt-to-income ratio, indicating that he is managing his finances well. His credit score is average, suggesting that he has a good credit history. However, his monthly expenses are quite high, which may be impacting his ability to save more towards his investment goals.
+
+Step 3: Provide personalized financial advice
+
+Based on Karthik's financial situation, here are some personalized financial advice:
+
+1. Review and reduce subscription services: Karthik has 4 subscription services, which may be contributing to his high monthly expenses. He should review these services and consider canceling any that he doesn't use regularly. This could free up some funds that can be redirected towards his investment goals.
+
+2. Increase investment contributions: Karthik's investment goal is $643.36 per month. To reach this goal faster, he could consider increasing his investment contributions. Even a small increase, such as an additional $50 per month, could significantly impact his long-term financial growth.
+
+3. Build an emergency fund: Karthik's emergency fund is currently at $993.18, which is a good start. However, he should aim to build it to cover at least 6 months of living expenses. This will provide him with a safety net in case of unexpected events, such as job loss or medical emergencies.
+
+4. Pay down high-interest debt: Although Karthik's debt-to-income ratio is low, he should still aim to pay down any high-interest debt, such as credit card balances. This will help him save money on interest payments and improve his overall financial health.
+
+5. Continue to monitor and adjust budget: As Karthik's financial situation changes, he should continue to monitor his budget and make adjustments as needed. This will help him stay on track with his financial goals and ensure that he is making the most of his income.
+
+By following these personalized financial advice, Karthik can continue to manage his finances well and work towards achieving his long-term financial goals.
+
+"""
+
+Step 1: Understand the client's financial situation
+
+Karthik Raghavan is a Steady Planner with a monthly income of $3,006.42. His monthly expenses total $1,463.18, resulting in actual savings of $4,213.16. He has a budget goal of $343, an investment amount of $643.36, and an emergency fund of $993.18. His credit score is 425.515152, and he has a loan payment of $581. His debt-to-income ratio is 0.843264, and his savings rate is 1.4013890294811315. He has 4 subscription services and his income type is Salary. His rent or mortgage is $3,233.
+
+Step 2: Analyze the client's financial situation
+
+Karthik's financial situation shows that he has a healthy savings rate and a low debt-to-income ratio, indicating that he is managing his finances well. His credit score is average, suggesting that he has a good credit history. However, his monthly
