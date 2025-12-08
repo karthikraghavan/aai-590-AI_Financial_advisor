@@ -16,7 +16,40 @@ Data Summary
 
 Model Architecture
 
+Agentic Pipeline
+
 <img width="2010" height="856" alt="image" src="https://github.com/user-attachments/assets/02bf8e04-83d0-472d-937c-eb27a84beaef" />
+
+Deep learning Model & RAG Pipeline
+
+<img width="1994" height="844" alt="image" src="https://github.com/user-attachments/assets/bde964f1-f5e6-43ea-baed-ff911a47901d" />
+
+Model Training
+
+<img width="1822" height="920" alt="image" src="https://github.com/user-attachments/assets/e2791bb5-d5aa-4fca-a497-628441c8bc8f" />
+
+Sample Inference - Financial Planning
+
+<img width="289" height="206" alt="image" src="https://github.com/user-attachments/assets/4b8af216-5587-42d8-928f-5a7c1042cf07" />
+
+Sample Inference - Asset Allocation
+
+<img width="310" height="186" alt="image" src="https://github.com/user-attachments/assets/41814733-b5b0-4ee8-95b8-27626fd53d1d" />
+
+Model Evaluation 
+
+<img width="660" height="822" alt="image" src="https://github.com/user-attachments/assets/993267e5-2f76-4d5e-9eb2-38e6d8f1b13f" />
+
+<img width="1234" height="556" alt="image" src="https://github.com/user-attachments/assets/577054d7-4816-423d-a577-1731c4ee8c69" />
+
+<img width="1234" height="458" alt="image" src="https://github.com/user-attachments/assets/a9a4c1bf-cae1-4662-87f5-6689075f24b4" />
+
+
+
+
+
+
+
 
 
 
