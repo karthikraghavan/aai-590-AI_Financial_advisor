@@ -46,6 +46,14 @@ Model Evaluation
 
 
 
+Meaningful clusters enable differentiated advice.
+RAG scores show strong grounding in expert guidelines.
+Output reports were accurate, internally consistent, and aligned with real-world financial planning frameworks.
+<img width="569" height="68" alt="image" src="https://github.com/user-attachments/assets/42979697-d788-41c1-abdb-79feac49d775" />
+
+
+
+
 
 
 
