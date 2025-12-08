@@ -7,6 +7,19 @@ The project leverages the following components to generate financial advice:
 3. Retrieval augmented reality that leverages Financial advisor model and external knowledge source to generate financial planning and asset allocation recommendation
 4.  Agentic AI pipeline to wire all the components and geenrate a consolidated advice.
 
+Github Files
+
+1. AAI_590_KarthikRaghavan.ipynb - Main notebook that contains the code for fin advisor
+2. finadvisor_finetune.ipynb - Code for deep learning model
+3. data/docs - External knowledge docs used for RAG
+4. data/userdata - user input data for evaluation
+5. data/reports - AI Respose for different user input data
+6. data/prompts - Prompts used for RAG
+7. faiss_vector_store - Vector store db
+8. results - KMeans clustering models
+
+   
+
 Data Summary
 
 1. Personal Finance Tracker Dataset
